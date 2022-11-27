@@ -1,0 +1,142 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  font-family: Vazirmatn;
+  direction: rtl;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+#header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+}
+#header .container {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .container a {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+#header .container a h3 {
+  margin: 0;
+}
+#header .list {
+  display: flex;
+  justify-content: space-between;
+}
+#header .list a {
+  color: #3acec2;
+}
+#header .list a:hover {
+  color: #093a58;
+}
+#header .logo a {
+  color: #093a58;
+}
+#banner {
+  background: #3acec2;
+  color: #fff;
+  text-align: center;
+  padding: 160px 0 40px 0;
+}
+#banner img {
+  width: 190px;
+  height: auto;
+}
+#banner p {
+  margin: 10px 0;
+}
+#banner h1 {
+  margin-bottom: 0;
+}
+#content {
+  margin-top: 30px;
+  width: 100%;
+}
+#content .content-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#content .content-list p {
+  line-height: 2;
+  margin-top: 18px;
+}
+#content .content-list b {
+  font-size: 18px;
+}
+#content .content-list .right-content,
+#content .content-list .middle-content,
+#content .content-list .left-content {
+  width: calc(100% / 3 - 20px);
+  padding: 10px;
+}
+
+#content .middle-content .img-container {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+}
+
+#content .middle-content .img-container .img-description {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background: #1a4374dc;
+  color: #fff;
+  width: 100%;
+  padding: 15px 0;
+}
+#content .middle-content .img-container .img-description h4 {
+  width: 100%;
+  margin-top: 5px;
+  line-height: 1;
+}
+
+#content .middle-content .img-container .img-description p {
+  font-size: 12px;
+  width: 100%;
+  margin-top: 5px;
+  line-height: 1.6;
+}
+
+#footer {
+  width: 100%;
+  background-color: #d9e4e9;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 30px;
+}
+#footer p {
+  padding: 0 10px 0 0;
+  display: inline;
+}
+#footer p span {
+  margin-right: -4px;
+}
